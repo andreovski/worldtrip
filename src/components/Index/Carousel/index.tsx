@@ -14,7 +14,7 @@ SwiperCore.use([Autoplay, Pagination, Navigation]);
 export default function Carousel() {
   return (
     <>
-      <Box marginBottom="16" marginX="auto">
+      <Box marginBottom={0.5} marginX="auto" width="100%">
         <Swiper
           centeredSlides={true}
           autoplay={{

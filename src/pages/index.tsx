@@ -91,18 +91,18 @@ export default function Home() {
             e mais...
           </TravelTypes>
         </SimpleGrid>
+
+        <Flex h="0.5" w="24" marginX="auto" bg="teal.700" marginTop={20} />
+
+        <Flex direction="column" marginTop={14}>
+          <Stack spacing={["6", "1.5"]} textAlign="center" marginBottom="12">
+            <Text fontSize="36">Vamos nessa?</Text>
+            <Text fontSize="36">Então escolha seu continente</Text>
+          </Stack>
+
+          <Carousel />
+        </Flex>
       </Box>
-
-      <Flex h="0.5" w="24" marginX="auto" bg="teal.700" />
-
-      <Flex direction="column" marginTop="14">
-        <Stack spacing={["6", "1.5"]} textAlign="center" marginBottom="12">
-          <Text fontSize="36">Vamos nessa?</Text>
-          <Text fontSize="36">Então escolha seu continente</Text>
-        </Stack>
-
-        <Carousel />
-      </Flex>
     </>
   );
 }
