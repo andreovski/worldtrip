@@ -8,6 +8,7 @@ import "swiper/components/pagination/pagination.min.css";
 import "swiper/components/navigation/navigation.min.css";
 
 import styles from "./carousel.module.css";
+import Link from "next/link";
 
 SwiperCore.use([Autoplay, Pagination, Navigation]);
 

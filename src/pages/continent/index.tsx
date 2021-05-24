@@ -1,7 +1,15 @@
 import { Flex, SimpleGrid, Img, Stack, Text, Box } from "@chakra-ui/react";
+import Card from "../../components/Card";
 import Header from "../../components/Header";
+import {
+  LondonCity,
+  ParisCity,
+  RomaCity,
+  PragueCity,
+  AmsterdamCity,
+} from "../../Utils/Cities100+";
 
-import { subtitleSizes, titleSizes } from "./CustomFontSizes";
+import { subtitleSizes, titleSizes } from "../../Utils/CustomFontSizes";
 
 export default function Continent() {
   return (
@@ -106,7 +114,18 @@ export default function Continent() {
             Cidades +100
           </Text>
 
-          <SimpleGrid templateColumns="repeat(4, 1fr)" gap={12}></SimpleGrid>
+          <SimpleGrid
+            marginTop={4}
+            columns={4}
+            spacingX={3}
+            minChildWidth="256px"
+          >
+            <Card location={LondonCity} />
+            <Card location={ParisCity} />
+            <Card location={RomaCity} />
+            <Card location={PragueCity} />
+            <Card location={AmsterdamCity} />
+          </SimpleGrid>
         </Box>
       </Box>
     </>

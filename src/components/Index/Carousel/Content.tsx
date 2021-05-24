@@ -1,4 +1,5 @@
 import { Image, Text, Flex, TextProps, ImageProps } from "@chakra-ui/react";
+import Link from "next/link";
 
 interface ContentProps {
   title?: string;
@@ -10,21 +11,24 @@ interface ContentProps {
 export function Content({ title, children, imageSrc, imageAlt }: ContentProps) {
   return (
     <>
-      <Flex
-        h="100%"
-        w="100%"
-        align="center"
-        justify="center"
-        position="absolute"
-        direction="column"
-      >
-        <Text fontSize="48" fontWeight="bold" color="white" zIndex="2">
-          {title}
-        </Text>
-        <Text fontSize="24" fontWeight="bold" color="white" zIndex="2">
-          {children}
-        </Text>
-      </Flex>
+      <Link href="/continent">
+        <Flex
+          h="100%"
+          w="100%"
+          align="center"
+          justify="center"
+          position="absolute"
+          direction="column"
+          cursor="pointer"
+        >
+          <Text fontSize="48" fontWeight="bold" color="white" zIndex="2">
+            {title}
+          </Text>
+          <Text fontSize="24" fontWeight="bold" color="white" zIndex="2">
+            {children}
+          </Text>
+        </Flex>
+      </Link>
       <Image
         filter="brightness(60%)"
         objectFit="cover"
