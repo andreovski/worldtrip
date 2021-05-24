@@ -21,14 +21,25 @@ export function Content({ title, children, imageSrc, imageAlt }: ContentProps) {
           direction="column"
           cursor="pointer"
         >
-          <Text fontSize="48" fontWeight="bold" color="white" zIndex="2">
+          <Text
+            fontSize={["36", "48"]}
+            fontWeight="bold"
+            color="white"
+            zIndex="2"
+          >
             {title}
           </Text>
-          <Text fontSize="24" fontWeight="bold" color="white" zIndex="2">
+          <Text
+            fontSize={["18", "24"]}
+            fontWeight="bold"
+            color="white"
+            zIndex="2"
+          >
             {children}
           </Text>
         </Flex>
       </Link>
+
       <Image
         filter="brightness(60%)"
         objectFit="cover"

@@ -99,10 +99,9 @@ export default function Home() {
             <Text fontSize="36">Vamos nessa?</Text>
             <Text fontSize="36">Então escolha seu continente</Text>
           </Stack>
-
-          <Carousel />
         </Flex>
       </Box>
+      <Carousel />
     </>
   );
 }
